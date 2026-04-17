@@ -1,26 +1,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0        ">                                          
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body, html {
                 margin: 0;
                 padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
             }
         </style>
     </head>
+
     <body>
-        <div style="width:100%;height:100%;max-width:100%">
+        <div style="width:100%;height:100%">
             <div id="game"></div>
         </div>
+
         <script>
             EJS_player = "#game";
             EJS_core = "psx";
-            EJS_gameName = "Resident Evil 2";
+            EJS_gameName = "Test Game";
             EJS_color = "#00ffff";
-            EJS_pathtodata = "https://emulatorjs.org/";
-            EJS_gameUrl = "https://files.catbox.moe/dums63.cue";
+            EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+            EJS_gameUrl = "https://cdn.emulatorjs.org/games/psx/Crash Bandicoot.chd";
         </script>
-        <script src="https://emulatorjs.org/loader.js"></script>
+
+        <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
 </html>
